@@ -47,7 +47,7 @@ const App = () => {
   const checkValidInput = (str) => {
     const regex = /^\d+(([\+-]+)\d+)+/g;
     const found = str.match(regex);
-    if (found.length == 0 || found[0] != str) {
+    if (!found || found.length == 0 || found[0] != str) {
       return false;
     }
     return true;
