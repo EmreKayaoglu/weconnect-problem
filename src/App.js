@@ -45,9 +45,9 @@ const App = () => {
   };
 
   const checkValidInput = (str) => {
-    const regex = /^\d+(([\+-]+)\d+)+/g;
+    const regex = /^\d+(([+-]+)\d+)+/g;
     const found = str.match(regex);
-    if (!found || found.length == 0 || found[0] != str) {
+    if (!found || found.length === 0 || found[0] !== str) {
       return false;
     }
     return true;
@@ -63,7 +63,7 @@ const App = () => {
     }
 
     setOutput("");
-    const regex = /([\+-]+)\d+/g;
+    const regex = /([+-]+)\d+/g;
     const cases = str.match(regex);
     let o = "";
     cases.forEach((element, i) => {
