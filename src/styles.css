@@ -1,0 +1,15 @@
+.testInput {
+  width: 250px;
+  height: 150px;
+}
+.testOutput {
+  width: 250px;
+  height: 150px;
+  margin-left: 10px;
+}
+
+.action {
+  width: 150px;
+  height: 50px;
+  margin-left: 180px;
+}
